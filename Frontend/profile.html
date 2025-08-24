@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - SkillSwap</title> <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">SkillSwap</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search Skills</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html" id="nav-profile">My Profile</a></li>
+                    <li><a href="messaging.html">Messages</a></li>
+                    <li><a href="scheduling.html">Scheduling</a></li>
+                    <li><a href="#" id="logout-link">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 id="profile-heading">User Profile</h2> <section id="profile-details" class="profile-details">
+            <p>Loading profile...</p>
+            </section>
+
+        <div id="edit-profile-link-container" style="margin-bottom: 20px; display: none;">
+            <a href="edit-profile.html" class="button">Edit My Profile</a>
+        </div>
+
+        <section class="reviews-section">
+            <h3>Reviews for <span id="reviews-for-username">this user</span></h3>
+            <div id="reviews-container">
+                <p>Loading reviews...</p>
+                </div>
+        </section>
+
+        <section id="leave-review-section" style="display: none;">
+            <h3>Leave a Review</h3>
+            <form id="review-form">
+                <input type="hidden" id="reviewed-username-input"> <div class="form-group rating-input">
+                    <label for="rating">Rating (1-5):</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> SkillSwap. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

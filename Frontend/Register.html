@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - SkillSwap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">SkillSwap</a></h1>
+            </div>
+            <nav>
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search Skills</a></li>
+                    <li><a href="register.html" class="active">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="#" id="logout-link" style="display: none;">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container registration-form-container">
+        <form id="userForm">
+            <h2>Join Our Community</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required placeholder="Choose a unique username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Create a strong password">
+                 
+            </div>
+             <div class="form-group">
+                <label for="location">Your Location (Optional)</label>
+                <input type="text" id="location" name="location" placeholder="e.g., City, Country">
+            </div>
+            <div class="form-group">
+                <label for="bio">Short Bio (Optional)</label>
+                <textarea id="bio" name="bio" rows="3" placeholder="Tell us a bit about yourself"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills You Can Teach</label>
+                <textarea id="skills" name="skills" rows="4" placeholder="List skills, one per line" required></textarea>
+                <small>Separate skills with a newline.</small>
+            </div>
+            <div class="form-group">
+                <label for="interests">Skills You Want to Learn</label>
+                <textarea id="interests" name="interests" rows="4" placeholder="List interests, one per line" required></textarea>
+                <small>Separate interests with a newline.</small>
+            </div>
+            <button type="submit">Register</button>
+             <p style="text-align: center; margin-top: 15px;">
+                 Already have an account? <a href="login.html">Login here</a>
+             </p>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> SkillSwap. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

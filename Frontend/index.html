@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap - Share & Learn Skills</title> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">SkillSwap</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="search.html">Search Skills</a></li>
+                    <li><a href="register.html" id="nav-register">Register</a></li>
+                    <li><a href="login.html" id="nav-login">Login</a></li>
+                    <li><a href="dashboard.html" id="nav-dashboard" style="display: none;">Dashboard</a></li>
+                    <li><a href="profile.html" id="nav-profile" style="display: none;">My Profile</a></li>
+                    <li><a href="#" id="logout-link" style="display: none;">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home-intro" class="hero-section">
+        <div class="container hero-content">
+            <h2>Welcome to SkillSwap</h2>
+            <p>Unlock your potential and connect with a community of learners and teachers.</p>
+            <a href="register.html" class="button hero-cta">Get Started Now</a>
+
+            <div class="features-section">
+                <h3>Why Choose SkillSwap?</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="feature-icon">🎓</i> <h4>Learn from Experts</h4>
+                        <p>Connect with passionate individuals eager to share their knowledge.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="feature-icon">🚀</i> <h4>Boost Your Skills</h4>
+                        <p>Acquire new abilities for personal and professional growth.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="feature-icon">🗓️</i> <h4>Flexible Scheduling</h4>
+                        <p>Find learning sessions that comfortably fit your busy lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="shape-divider">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31.74,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+             </svg>
+         </div>
+    </section>
+
+    <div class="container page-section">
+        <section id="skills-preview" class="skills-list-section">
+            <h2>Explore Available Skills</h2>
+            <div class="skills-grid" id="skillsDisplay">
+                <p>Loading skills...</p>
+                </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> SkillSwap. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

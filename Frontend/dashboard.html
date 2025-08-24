@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SkillSwap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">SkillSwap</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search Skills</a></li>
+                     <li><a href="register.html" id="nav-register" style="display: none;">Register</a></li>
+                    <li><a href="login.html" id="nav-login" style="display: none;">Login</a></li>
+                    <li><a href="dashboard.html" id="nav-dashboard" class="active">Dashboard</a></li>
+                    <li><a href="profile.html" id="nav-profile">My Profile</a></li>
+                    <li><a href="messaging.html" id="nav-messaging">Messages</a></li>
+                    <li><a href="scheduling.html" id="nav-scheduling">Scheduling</a></li>
+                    <li><a href="#" id="logout-link">Logout</a></li> </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="dashboard">
+            <h2>Welcome, <span id="dashboard-username">User</span>!</h2>
+            <p id="dashboard-loading-msg">Loading dashboard data...</p>
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-section" id="dashboard-schedule-section">
+                    <h3>Upcoming Sessions</h3>
+                    <ul id="dashboard-schedule-list">
+                        <li>Loading schedules...</li>
+                    </ul>
+                    <a href="scheduling.html" class="button" style="margin-top: 15px; display: inline-block; width: auto;">View/Book Schedule</a>
+                </div>
+
+                <div class="dashboard-section" id="dashboard-message-section">
+                    <h3>Recent Messages</h3>
+                     <div id="dashboard-message-summary">
+                         <p>Loading messages...</p>
+                     </div>
+                    <a href="messaging.html" class="button" style="margin-top: 15px; display: inline-block; width: auto;">Go to Messages</a>
+                </div>
+
+                <div class="dashboard-section" id="dashboard-my-skills-section">
+                    <h3>My Skills (Teaching)</h3>
+                    <ul id="dashboard-my-skills">
+                        <li>Loading your skills...</li>
+                    </ul>
+                     <a href="profile.html" class="button" style="margin-top: 15px; display: inline-block; width: auto;">Edit My Profile</a>
+                </div>
+
+                <div class="dashboard-section" id="dashboard-recommended-skills-section">
+                    <h3>Recommended Skills (Learning)</h3>
+                    <ul id="dashboard-recommended-skills">
+                         <li>Loading recommendations...</li>
+                    </ul>
+                     <a href="search.html" class="button" style="margin-top: 15px; display: inline-block; width: auto;">Search for Skills</a>
+                </div>
+
+                <div class="dashboard-section" id="quick-links-section">
+                     <h3>Quick Links</h3>
+                    <ul>
+                         <li><a href="profile.html">View/Edit My Profile</a></li>
+                         <li><a href="search.html">Find Skills and Users</a></li>
+                         <li><a href="scheduling.html">Schedule a Session</a></li>
+                         <li><a href="messaging.html">Check Messages</a></li>
+                     </ul>
+                 </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> SkillSwap. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

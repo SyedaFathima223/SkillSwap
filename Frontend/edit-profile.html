@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - SkillSwap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">SkillSwap</a></h1>
+            </div>
+            <nav>
+                 <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="search.html">Search Skills</a></li>
+                     <li><a href="dashboard.html">Dashboard</a></li>
+                     <li><a href="profile.html">My Profile</a></li>
+                     <li><a href="messaging.html">Messages</a></li>
+                     <li><a href="scheduling.html">Scheduling</a></li>
+                     <li><a href="#" id="logout-link">Logout</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="edit-profile-form-container">
+             <h2>Edit Your Profile</h2>
+             <form id="editProfileForm">
+                 <div class="form-group">
+                     <label for="edit-username">Username (Cannot be changed)</label>
+                     <input type="text" id="edit-username" name="username" readonly disabled style="background-color: #e9ecef;">
+                 </div>
+                 <div class="form-group">
+                    <label for="edit-location">Your Location</label>
+                    <input type="text" id="edit-location" name="location" placeholder="e.g., City, Country">
+                </div>
+                <div class="form-group">
+                    <label for="edit-bio">Short Bio</label>
+                    <textarea id="edit-bio" name="bio" rows="3" placeholder="Tell us a bit about yourself"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="edit-skills">Skills You Can Teach</label>
+                    <textarea id="edit-skills" name="skills" rows="4" placeholder="List skills, one per line"></textarea>
+                    <small>Separate skills with a newline.</small>
+                </div>
+                <div class="form-group">
+                    <label for="edit-interests">Skills You Want to Learn</label>
+                    <textarea id="edit-interests" name="interests" rows="4" placeholder="List interests, one per line"></textarea>
+                    <small>Separate interests with a newline.</small>
+                </div>
+                 <button type="submit">Update Profile</button>
+             </form>
+         </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> SkillSwap. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

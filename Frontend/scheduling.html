@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling - SkillSwap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+         <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">SkillSwap</a></h1>
+            </div>
+             <nav>
+                 <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="search.html">Search Skills</a></li>
+                     <li><a href="dashboard.html">Dashboard</a></li>
+                     <li><a href="profile.html">My Profile</a></li>
+                     <li><a href="messaging.html">Messages</a></li>
+                     <li><a href="scheduling.html" class="active">Scheduling</a></li>
+                     <li><a href="#" id="logout-link">Logout</a></li>
+                 </ul>
+             </nav>
+         </div>
+     </header>
+
+    <div class="container">
+         <section class="my-schedule">
+            <h2>My Schedule</h2>
+            <ul class="schedule-list" id="schedule-list">
+                 <li>Loading schedule...</li>
+             </ul>
+         </section>
+
+        <section class="booking-form">
+             <h2>Create New Booking</h2>
+            <form id="schedule-form">
+                <div class="form-group">
+                    <label for="skill">Skill</label>
+                    <input type="text" id="skill" name="skill" required placeholder="e.g., JavaScript, Guitar">
+                </div>
+                <div class="form-group">
+                     <label for="teacher">Teacher Username</label>
+                     <input type="text" id="teacher" name="teacher" required placeholder="Enter the username of the teacher">
+                 </div>
+                 <input type="hidden" id="learner" name="learner">
+                 <p>You (<span id="current-learner-username">...</span>) will be the learner.</p>
+                <div class="form-group">
+                    <label for="startTime">Start Time</label>
+                    <input type="datetime-local" id="startTime" name="startTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="endTime">End Time</label>
+                    <input type="datetime-local" id="endTime" name="endTime" required>
+                </div>
+                <button type="submit">Request Booking</button>
+            </form>
+         </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> SkillSwap. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

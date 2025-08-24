@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - SkillSwap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">SkillSwap</a></h1>
+            </div>
+            <nav>
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html" class="active">Search Skills</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html">My Profile</a></li>
+                    <li><a href="messaging.html">Messages</a></li>
+                    <li><a href="scheduling.html">Scheduling</a></li>
+                     <li><a href="register.html" id="nav-register" style="display: none;">Register</a></li>
+                     <li><a href="login.html" id="nav-login" style="display: none;">Login</a></li>
+                     <li><a href="#" id="logout-link" style="display: none;">Logout</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="search-form">
+            <h2>Search for Users and Skills</h2>
+            <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                <input type="text" id="searchInput" placeholder="Enter username or skill..." style="flex-grow: 1; padding: 12px; border: 1px solid #ced4da; border-radius: 5px;">
+                <button id="searchButton" class="button" style="width: auto;">Search</button>
+            </div>
+        </section>
+
+        <section class="search-results">
+            <h3>Results</h3>
+            <div id="searchResults">
+                <p>Enter a query and click Search.</p>
+                </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> SkillSwap. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
